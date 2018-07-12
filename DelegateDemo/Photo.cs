@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace DelegateDemo
 {
-    class Program
+    public class Photo
     {
-        static void Main(string[] args)
+        public static Photo Load(string path)
         {
-            var photoProcessor = new PhotoProcessor();
-            photoProcessor.Process(string.Empty);
+            return new Photo();
+        }
+
+        public void Save()
+        {
+
         }
     }
 }
